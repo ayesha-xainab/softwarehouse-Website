@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Tech Innovators</title>
+    <!--Styles-->
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .gallery-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .gallery-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: calc(33.333% - 20px);
+            max-width: 400px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .gallery-item-description {
+            padding: 15px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid {
+                gap: 10px;
+            }
+            .gallery-item {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Tech Innovators logo.png" alt="Dynamic Developers">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Gallery Section-->
+    <div class="container">
+        <div class="gallery-header">
+            <h1>Our Gallery</h1>
+            <p>Insights to the Company's Activities</p>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/team meeting.jpg" alt="Project 1">
+                <div class="gallery-item-description">
+                    <h3>Team Meeting</h3>
+                    <p>Twice every week a team meeting is held in the company, to ensure collaboration.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/social work.png" alt="Project 2">
+                <div class="gallery-item-description">
+                    <h3>Social Welfare work</h3>
+                    <p>Our company encourages and actively participates in social work.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/project exhibition.jpg" alt="Project 3">
+                <div class="gallery-item-description">
+                    <h3>Project Exhibition</h3>
+                    <p>Our interns participated in an Intenational Project Exhibition held in September, 2026.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer id="contacts">
+        <h3>Contact</h3>
+        <p><strong>Address:</strong> H-12, Islamabad, Pakistan</p>
+        <p><strong>Phone:</strong> +92 309 3952963</p>
+        <p><strong>E-mail:</strong> info@techinnovators.com.pk</p><br>
+        <p>&copy; 2024 Tech Innovators</p>
+    </footer>
+</body>
+</html>
